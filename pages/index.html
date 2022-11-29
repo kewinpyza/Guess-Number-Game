@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Guess the Number!</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
+      rel="stylesheet"
+    />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../styles/app.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Guess the Number!</h1>
+      <button class="btn again">Play Again</button>
+      <a href="starter.html" class="back-arrow">&#129044;</a>
+      <div class="display-number">?</div>
+    </header>
+    <article class="box-numbers">
+      <button class="box-item">1</button>
+      <button class="box-item">2</button>
+      <button class="box-item">3</button>
+      <button class="box-item">4</button>
+      <button class="box-item">5</button>
+      <button class="box-item">6</button>
+      <button class="box-item">7</button>
+      <button class="box-item">8</button>
+      <button class="box-item">9</button>
+      <button class="box-item">10</button>
+      <button class="box-item">11</button>
+      <button class="box-item">12</button>
+      <button class="box-item">13</button>
+      <button class="box-item">14</button>
+      <button class="box-item">15</button>
+      <button class="box-item">16</button>
+      <button class="box-item">17</button>
+      <button class="box-item">18</button>
+      <button class="box-item">19</button>
+      <button class="box-item">20</button>
+      <button class="box-item">21</button>
+      <button class="box-item">22</button>
+      <button class="box-item">23</button>
+      <button class="box-item">24</button>
+      <button class="box-item">25</button>
+    </article>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" min="1" max="25" />
+        <p class="rules-info">The number must be between 1 and 25</p>
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="info">Select the number to start guessing 😀</p>
+        <p class="label label-score">💯 Score: <span class="score">25</span></p>
+        <p class="label label-highscore">
+          🏆 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2022 Kewin Pyza</p>
+    </footer>
+    <script src="../app.js"></script>
+  </body>
+</html>
