@@ -33,7 +33,6 @@ footer {
 
 .box-numbers {
   margin: 0 auto;
-  width: 85%;
   height: 27vh;
   display: flex;
   flex-wrap: wrap;
@@ -45,12 +44,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 32rem;
+  width: 35%;
 }
 
 .right {
   font-size: 1.8rem;
-  width: 32rem;
+  width: 35%;
   text-align: left;
   position: relative;
 }
@@ -70,8 +69,8 @@ h1 {
 }
 
 .display-number {
-  width: 8rem;
-  height: 8rem;
+  width: 7.5rem;
+  height: 7.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +96,7 @@ h1 {
 }
 
 .label {
-  width: 56%;
+  width: 50%;
   margin-left: auto;
 }
 
@@ -165,7 +164,7 @@ h1 {
   width: 15rem;
   text-align: center;
   padding: 1.5rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.6rem;
 }
 
 .btn {
@@ -197,11 +196,11 @@ h1 {
   background-color: #0f5889;
   color: #cbcbf3;
   width: 5rem;
-  height: 3.8rem;
+  height: 4rem;
   border-radius: 0.8rem;
   line-height: 2.5rem;
   font-size: 2rem;
-  margin: 0.5rem 0.5rem 0 0.5rem;
+  margin: 0.3rem 0.3rem 0 0.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,4 +220,110 @@ h1 {
 
 .nope {
   visibility: hidden;
+}
+
+/* RESSPONSIVE  */
+@media (max-width: 1182px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.9rem 1.8rem;
+  }
+  .box-item {
+    width: 3.8rem;
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+  }
+  .label {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+  .guess {
+    font-size: 4.2rem;
+    width: 13.5rem;
+  }
+}
+
+@media (max-width: 930px) {
+  h1 {
+    top: 55%;
+  }
+  .again {
+    right: 1rem;
+    top: 1rem;
+  }
+  .back-arrow {
+    left: 1.5rem;
+    transform: translateY(-1.5rem);
+  }
+  .back-arrow:hover {
+    transform: translateY(-1.7rem);
+  }
+  .display-number {
+    width: 6rem;
+    height: 6rem;
+    font-size: 4rem;
+  }
+  .box-item {
+    width: 3.2rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+  }
+  .info {
+    margin-bottom: 3rem;
+    font-size: 1.35rem;
+  }
+  .guess {
+    border: 3px solid white;
+    border-radius: 1.8rem;
+    font-size: 3.8rem;
+    width: 12rem;
+    padding: 1.3rem;
+  }
+  .label {
+    font-size: 1.4rem;
+    width: 65%;
+  }
+}
+
+@media (max-width: 830px) {
+  .box-item {
+    width: 3.8rem;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    margin: 0.2rem 0.2rem 0 0.2rem;
+  }
+  .label {
+    width: 75%;
+  }
+}
+
+@media (max-width: 625px) {
+  body {
+    font-size: 0.85rem;
+  }
+  .box-item {
+    width: 2.9rem;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+  }
+  .info {
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+  .guess {
+    border: 2px solid white;
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    width: 10rem;
+    padding: 1rem;
+  }
+  .label {
+    width: 83%;
+    font-size: 1.2rem;
+  }
 }
