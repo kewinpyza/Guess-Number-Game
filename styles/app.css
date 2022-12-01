@@ -30,14 +30,18 @@ footer {
   color: #2ae8e8;
   text-shadow: 1px 1px 2px #8becff;
 }
+article {
+  height: 27vh;
+  display: flex;
+  align-items: flex-end;
+}
 
 .box-numbers {
-  margin: 0 auto;
-  height: 27vh;
+  height: 65%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: flex-end;
 }
 
 .left {
@@ -195,8 +199,10 @@ h1 {
 .box-item {
   background-color: #0f5889;
   color: #cbcbf3;
-  width: 5rem;
-  height: 4rem;
+  /* width: 5rem;
+  height: 4rem; */
+  width: 7%;
+  height: 40%;
   border-radius: 0.8rem;
   line-height: 2.5rem;
   font-size: 2rem;
@@ -244,6 +250,78 @@ h1 {
   .guess {
     font-size: 4.2rem;
     width: 13.5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1200px) and (max-height: 500px) {
+  header {
+    height: 30vh;
+  }
+  article {
+    height: 70vh;
+    width: 50%;
+    padding-bottom: 0.5rem;
+  }
+  .box-numbers {
+    height: 90%;
+    width: 100%;
+  }
+  main {
+    height: 70vh;
+    width: 50%;
+    position: absolute;
+    right: 0;
+  }
+  footer {
+    display: none;
+  }
+  .guess {
+    border: 3px solid white;
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    width: 8rem;
+    padding: 1rem;
+  }
+  .box-item {
+    width: 10%;
+    height: 20%;
+  }
+  .display-number {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 3.5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.3rem;
+  }
+  .again {
+    top: 1.5rem;
+  }
+  .back-arrow {
+    font-size: 5rem;
+    top: 0.6rem;
+  }
+  .rules-info {
+    font-size: 0.6rem;
+  }
+  .left {
+    width: 45%;
+  }
+  .right {
+    font-size: 1.8rem;
+    width: 45%;
+  }
+  .label {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .info {
+    margin-bottom: 2.5rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -302,12 +380,12 @@ h1 {
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 650px) and (max-height: 759px) {
   body {
     font-size: 0.85rem;
   }
   .box-item {
-    width: 2.9rem;
+    width: 4rem;
     border-radius: 0.8rem;
     font-size: 1.4rem;
   }
@@ -327,3 +405,224 @@ h1 {
     font-size: 1.2rem;
   }
 }
+
+@media (max-width: 650px) and (min-height: 760px) {
+  .box-numbers {
+    height: 31vh;
+  }
+  header {
+    height: 30vh;
+    border-bottom: 3px solid white;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  main {
+    height: 36vh;
+  }
+  .again {
+    top: 2rem;
+    right: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+  .back-arrow {
+    top: 1rem;
+    left: 3rem;
+  }
+  .guess {
+    border: 3px solid white;
+    border-radius: 1.8rem;
+    font-size: 4rem;
+    width: 12rem;
+    padding: 1.3rem;
+  }
+  .label {
+    width: 83%;
+    font-size: 1.4rem;
+  }
+  .info {
+    margin-bottom: 3.5rem;
+    font-size: 1.3rem;
+  }
+  .box-item {
+    width: 4rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .display-number {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 759px) {
+  body {
+    font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  header {
+    height: 25vh;
+    border-bottom: 3px solid white;
+  }
+  .box-numbers {
+    height: 32vh;
+  }
+  .box-item {
+    width: 2.1rem;
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+  }
+  .info {
+    margin-bottom: 3.5rem;
+    font-size: 0.9rem;
+  }
+  .guess {
+    width: 8rem;
+    padding: 0.8rem;
+    font-size: 2.5rem;
+  }
+  .label {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.4rem;
+  }
+  .back-arrow {
+    font-size: 4.5rem;
+    left: 1rem;
+    transform: translateY(-1rem);
+  }
+  .display-number {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3.5rem;
+  }
+  .rules-info {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 400px) and (min-height: 760px) {
+  .box-numbers {
+    height: 38vh;
+  }
+  header {
+    height: 27vh;
+    border-bottom: 3px solid white;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  .label {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .info {
+    margin-bottom: 3.5rem;
+    font-size: 1.1rem;
+  }
+  .box-item {
+    width: 4.2rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  main {
+    height: 32vh;
+  }
+  .right {
+    width: 40%;
+  }
+  .back-arrow {
+    font-size: 5rem;
+    transform: translateY(-0.5rem);
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+  .again {
+    right: 1rem;
+    top: 1.5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 759px) and (max-height: 400px) {
+  header {
+    height: 30vh;
+  }
+  .box-numbers {
+    height: 70vh;
+    width: 50%;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    left: 0;
+  }
+  main {
+    height: 70vh;
+    width: 50%;
+    position: absolute;
+    right: 0;
+  }
+  footer {
+    display: none;
+  }
+  .guess {
+    border: 3px solid white;
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    width: 8rem;
+    padding: 1rem;
+  }
+  .box-item {
+    width: 10%;
+    height: 20%;
+  }
+  .display-number {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+    top: 45%;
+    left: 48%;
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.3rem;
+  }
+  .again {
+    top: 1.5rem;
+  }
+  .back-arrow {
+    font-size: 5rem;
+    top: 0.6rem;
+  }
+  .rules-info {
+    font-size: 0.6rem;
+  }
+  .left {
+    width: 45%;
+  }
+  .right {
+    font-size: 1.8rem;
+    width: 45%;
+  }
+  .label {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .info {
+    margin-bottom: 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Lapek 1700 x 800  */
