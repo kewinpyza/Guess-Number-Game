@@ -17,12 +17,14 @@ const heading = document.querySelector('h1');
 const footer = document.querySelector('footer');
 const article = document.querySelector('article');
 const winningMessage = document.querySelector('.win-header');
+const losingMessage = document.querySelector('.lose-header');
 
 const numbersQuantity = 25;
 let gameNumber = Math.trunc(Math.random() * 25) + 1;
 let score = 15;
 let highscore = 0;
 let gameOver = false;
+console.log(gameNumber);
 
 const displayMessage = msg => {
   message.textContent = msg;
@@ -80,7 +82,6 @@ function gameLogic() {
       boxNumbers.forEach(num => {
         num.classList.add('hidden');
       });
-      backArrow.style.opacity = '0.4';
       heading.style.opacity = '0.4';
       footer.classList.add('hidden');
       winningMessage.insertAdjacentHTML('beforeend', html);
@@ -104,7 +105,18 @@ function gameLogic() {
         scoreLabel.textContent = score;
         boxNumbers[guessNum - 1].disabled = true;
       } else {
-        displayMessage('YOU LOST THE GAME! 🤬');
+        const html = `<h2>😵Ohhhh... You LOST the Game😰 Try again!</h2>`;
+        body.style.backgroundColor = '#e50f0f';
+        heading.style.opacity = '0.4';
+        leftLabel.classList.add('hidden');
+        rightLabel.classList.add('hidden');
+        footer.classList.add('hidden');
+
+        boxNumbers.forEach(num => {
+          num.classList.add('hidden');
+        });
+        displayNumber.classList.add('hidden');
+        losingMessage.insertAdjacentHTML('beforeend', html);
         scoreLabel.textContent = 0;
         gameOver = true;
       }
@@ -118,6 +130,7 @@ function playAgain() {
   score = 15;
   gameOver = false;
   displayMessage('Select the number to start guessing 😀');
+  displayNumber.classList.remove('hidden');
   displayNumber.textContent = '?';
   scoreLabel.textContent = score;
   inpNumber.value = '';
@@ -125,7 +138,6 @@ function playAgain() {
   displayNumber.style.width = '15vh';
   displayNumber.style.height = '15vh';
   displayNumber.style.fontSize = '12vh';
-  backArrow.style.opacity = '1';
   heading.style.opacity = '1';
   footer.classList.remove('hidden');
   leftLabel.classList.remove('hidden');
@@ -134,6 +146,7 @@ function playAgain() {
   displayNumber.style.backgroundColor = 'white';
   displayNumber.style.color = 'black';
   winningMessage.textContent = '';
+  losingMessage.textContent = '';
   boxNumbers.forEach(num => {
     num.classList.remove('hidden');
     num.disabled = false;
