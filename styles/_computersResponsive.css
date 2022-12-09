@@ -1,0 +1,356 @@
+/* LAPTOP AND COMPUTER DEVICES */
+@media screen and (min-height: 900px) and (min-width: 1460px) {
+  footer {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 5.5rem;
+  }
+  .win-header {
+    font-size: 5vh;
+    top: 45%;
+    width: 65vw;
+  }
+  .guess {
+    border: 6px solid white;
+    border-radius: 2.5rem;
+    font-size: 7rem;
+    width: 30rem;
+    padding: 1.9rem;
+    margin-bottom: 1rem;
+  }
+  .rules-info {
+    font-size: 1.6rem;
+  }
+  .btn {
+    border-radius: 15rem;
+    font-size: 2.4rem;
+    padding: 1.5rem 3rem;
+  }
+  .back-arrow {
+    font-size: 9rem;
+  }
+  .left {
+    margin: 0 auto;
+  }
+  .right {
+    width: 45%;
+  }
+  .label {
+    margin-right: 5rem;
+    width: 55%;
+    font-size: 2.7rem;
+  }
+  .info {
+    font-size: 2.5rem;
+  }
+  .display-number {
+    width: 11rem;
+    height: 11rem;
+    font-size: 7rem;
+  }
+}
+
+@media screen and (min-height: 900px) and (max-width: 1460px) {
+  footer {
+    font-size: 1.3rem;
+  }
+  h1 {
+    top: 50%;
+    font-size: 4.5rem;
+  }
+  .win-header {
+    font-size: 4.2vh;
+    top: 42%;
+    width: 98vw;
+  }
+  .guess {
+    border: 5px solid white;
+    border-radius: 2.2rem;
+    font-size: 6rem;
+    width: 22rem;
+    padding: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .rules-info {
+    font-size: 1.6rem;
+  }
+  .btn {
+    border-radius: 15rem;
+    font-size: 2.1rem;
+    padding: 1.3rem 2.6rem;
+  }
+  .back-arrow {
+    font-size: 7.5rem;
+  }
+  .left {
+    margin: 0 auto;
+  }
+  .right {
+    width: 45%;
+  }
+  .label {
+    margin-right: 5rem;
+    width: 60%;
+    font-size: 2.4rem;
+  }
+  .info {
+    font-size: 2rem;
+  }
+  .display-number {
+    font-size: 6.5rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .box-item {
+    width: 6.5%;
+  }
+}
+
+@media screen and (max-height: 900px) and (min-width: 1460px) {
+  footer {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 5.5rem;
+  }
+  main {
+    align-items: flex-end;
+  }
+  .guess {
+    border: 5px solid white;
+    border-radius: 2.3rem;
+    font-size: 6.5rem;
+    width: 25rem;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .rules-info {
+    font-size: 1.3rem;
+  }
+  .btn {
+    border-radius: 15rem;
+    font-size: 2.4rem;
+    padding: 1.5rem 3rem;
+  }
+  .check {
+    margin-top: 0.3rem;
+  }
+  .back-arrow {
+    font-size: 9rem;
+  }
+  .left {
+    margin: 0 auto;
+  }
+  .right {
+    width: 45%;
+  }
+  .label {
+    margin-right: 5rem;
+    width: 50%;
+    font-size: 2.6rem;
+  }
+  .info {
+    font-size: 2.5rem;
+  }
+  .display-number {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+}
+
+@media screen and (max-height: 900px) and (max-width: 1460px) {
+  .guess {
+    border: 5px solid white;
+    border-radius: 2rem;
+    font-size: 6rem;
+    width: 20rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .win-header {
+    font-size: 4vh;
+  }
+  .rules-info {
+    font-size: 1.1rem;
+  }
+  .btn {
+    padding: 1.4rem 2.8rem;
+    font-size: 2rem;
+  }
+  .again {
+    top: 2rem;
+    right: 1rem;
+  }
+  .label {
+    width: 60%;
+  }
+  .box-item {
+    border-radius: 0.45rem;
+    line-height: 1.85rem;
+    font-size: 1.7rem;
+    margin: 0.2rem 0.18rem 0 0.18rem;
+  }
+  .display-number {
+    font-size: 5rem;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 1400px) {
+  header {
+    height: 30vh;
+  }
+  footer {
+    font-size: 1.15rem;
+  }
+  article {
+    height: 67vh;
+    float: left;
+    width: 50%;
+    padding-bottom: 0.5rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+    top: 30%;
+  }
+  .box-numbers {
+    align-content: flex-end;
+    height: 90%;
+    width: 100%;
+  }
+  main {
+    height: 67vh;
+    width: 50%;
+  }
+  footer::before {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .box-item {
+    width: 12%;
+    height: 20%;
+  }
+  .display-number {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+  .label {
+    width: 70%;
+    margin-right: 3rem;
+    font-size: 2.2rem;
+  }
+  .info {
+    margin-bottom: 5rem;
+    font-size: 2.3rem;
+  }
+  .right {
+    width: 50%;
+    margin: auto 0;
+  }
+  .left {
+    margin-bottom: 1.5rem;
+    width: 50%;
+  }
+}
+
+@media (max-height: 600px) and (min-width: 1400px) {
+  header {
+    height: 30vh;
+  }
+  footer {
+    font-size: 1rem;
+  }
+  article {
+    height: 67vh;
+    float: left;
+    width: 50%;
+    padding-bottom: 0.5rem;
+  }
+  h1 {
+    font-size: 4rem;
+    top: 30%;
+  }
+  .box-numbers {
+    align-content: flex-end;
+    height: 90%;
+    width: 100%;
+  }
+  main {
+    height: 67vh;
+    width: 50%;
+  }
+  footer::before {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .again {
+    top: 1rem;
+    right: 1rem;
+  }
+  .box-item {
+    width: 12%;
+    height: 20%;
+  }
+  .display-number {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .label {
+    width: 70%;
+    margin-right: 3rem;
+    font-size: 2rem;
+  }
+  .info {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+  }
+  .right {
+    width: 50%;
+    margin: auto 0;
+  }
+  .left {
+    margin-bottom: 0.5rem;
+    width: 50%;
+  }
+  .guess {
+    border: 4px solid white;
+    font-size: 5.8rem;
+    width: 20rem;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .rules-info {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-height: 500px) and (min-width: 1200px) {
+  h1 {
+    font-size: 3.5rem;
+    top: 27%;
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.3rem 2.6rem;
+  }
+  .display-number {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .info {
+    margin-bottom: 2.5rem;
+    font-size: 1.7rem;
+  }
+  .guess {
+    border: 3px solid white;
+    font-size: 5rem;
+    width: 16rem;
+    padding: 1.2rem;
+    margin-bottom: 0;
+  }
+  .rules-info {
+    font-size: 1rem;
+  }
+}

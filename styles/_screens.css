@@ -1,0 +1,22 @@
+/* LOSING AND WINNING SCREEN  */
+.win-header {
+  color: #f2ef21;
+  font-size: 5.3vh;
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 94vw;
+}
+
+.lose-header {
+  color: #ff9853;
+  font-size: 5.3vh;
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 94vw;
+}
