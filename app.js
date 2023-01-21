@@ -16,8 +16,9 @@ const message = document.querySelector('.info');
 const displayNumber = document.querySelector('.display-number');
 const scoreLabel = document.querySelector('.score');
 const highscoreLabel = document.querySelector('.highscore');
-const winningMessage = document.querySelector('.win-header');
-const losingMessage = document.querySelector('.lose-header');
+const endScreen = document.querySelector('.end-screen');
+const winningMessage = document.querySelector('.end-screen-win');
+const losingMessage = document.querySelector('.end-screen-lose');
 
 // GAME Variables
 const numbersQuantity = 25;
@@ -86,7 +87,7 @@ function gameLogic() {
 
     // Player wins game
     if (guessNum === gameNumber) {
-      const html = `<h2>🏆Congratulations! Correct Number🎯 Your score is ${score}/15</h2>`;
+      const html = `<h2 class="heading-animated">🏆Congratulations! Correct Number🎯 Your score is ${score}/15</h2>`;
       displayNumber.textContent = gameNumber;
       displayNumber.style.width = '44vh';
       displayNumber.style.height = '44vh';
@@ -97,7 +98,8 @@ function gameLogic() {
       body.style.backgroundColor = '#25d11f';
       boxNumbers[gameNumber - 1].disabled = true;
       endGameScreen();
-      winningMessage.insertAdjacentHTML('beforeend', html);
+      endScreen.classList.add('end-screen-win');
+      endScreen.insertAdjacentHTML('beforeend', html);
       // Saving best score
       if (score > highscore) {
         highscore = score;
@@ -118,12 +120,13 @@ function gameLogic() {
         boxNumbers[guessNum - 1].disabled = true;
         // Player loses game
       } else {
-        const html = `<h2>😵Ohhhh Noo... You LOST the Game😰 Try again!</h2>`;
-        body.style.backgroundColor = '#820909';
-        displayNumber.classList.add('hidden');
-        losingMessage.insertAdjacentHTML('beforeend', html);
-        scoreLabel.textContent = 0;
+        const html = `<h2 class="heading-animated">😵Ohh Noo... You LOST the Game😰 Try again!</h2>`;
         endGameScreen();
+        endScreen.classList.add('end-screen-lose');
+        body.style.backgroundColor = '#820909';
+        // displayNumber.classList.add('hidden');
+        endScreen.insertAdjacentHTML('beforeend', html);
+        scoreLabel.textContent = 0;
       }
     }
   }
@@ -135,8 +138,7 @@ function playAgain() {
   displayNumber.style.width = '15vh';
   displayNumber.style.height = '15vh';
   displayNumber.style.fontSize = '12vh';
-  winningMessage.textContent = '';
-  losingMessage.textContent = '';
+  endScreen.textContent = '';
   boxNumbers.forEach(num => {
     num.classList.remove('hidden');
     num.disabled = false;

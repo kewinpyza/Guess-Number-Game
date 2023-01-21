@@ -6,7 +6,7 @@
   h1 {
     font-size: 5.5rem;
   }
-  .win-header {
+  .end-screen-win {
     font-size: 5vh;
     top: 45%;
     width: 65vw;
@@ -59,7 +59,7 @@
     top: 50%;
     font-size: 4.5rem;
   }
-  .win-header {
+  .end-screen-win {
     font-size: 4.2vh;
     top: 42%;
     width: 98vw;
@@ -168,7 +168,7 @@
     padding: 1.5rem;
     margin-bottom: 1rem;
   }
-  .win-header {
+  .end-screen-win {
     font-size: 4vh;
   }
   .rules-info {

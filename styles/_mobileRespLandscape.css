@@ -18,7 +18,7 @@
     font-size: 6rem;
     top: 53%;
   }
-  .win-header {
+  .end-screen-win {
     top: 55%;
     width: 70vw;
   }
@@ -303,7 +303,7 @@
   footer {
     font-size: 0.45rem;
   }
-  .win-header {
+  .end-screen-win {
     top: 55%;
     font-size: 5vh;
   }
